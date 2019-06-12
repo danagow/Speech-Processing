@@ -217,7 +217,7 @@ def main_analysis(start):
 		    value.set(note)
 		    num_frames += 1 
 		    selected_note = sNote.get()
-		    previous_note=''
+		    #previous_note=''
 		    if num_frames >= FRAMES_PER_FFT:
 		        # print ('freq: {:7.2f} Hz     note: {:>3s} {:+.2f}'.format(
 		        #     freq, note_name(n0), n-n0))
@@ -245,7 +245,7 @@ def pop_up_success():
 	window.wm_title("Message")
 	window.eval('tk::PlaceWindow %s center' % window.winfo_toplevel())
 	window.withdraw()
-	messagebox.showinfo('Information','You sing correctly')
+	messagebox.showinfo('Information','You sing correctly. Good job!!')
 	window.deiconify()
 	window.destroy()
 
